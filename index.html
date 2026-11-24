@@ -34,7 +34,6 @@
             <li><a href="#interests">Research Interests</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#publications">Publications</a></li>
-            <li id="resources-nav" hidden><a href="#resources">Software &amp; Resources</a></li>
             <li><a href="#experience">Education &amp; Experience</a></li>
             <li><a href="#talks">Talks &amp; Presentations</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -93,13 +92,6 @@
         </div>
       </section>
 
-      <section class="content-section" id="resources" hidden>
-        <h2>Software &amp; Resources</h2>
-        <div class="entries">
-          <!-- Add released repositories, algorithms, tools, or datasets here with public links. -->
-        </div>
-      </section>
-
       <section class="content-section" id="experience">
         <h2>Education &amp; Experience</h2>
         <p class="draft-field">[Degrees, research appointments, internships, and academic visits, with institutions and dates.]</p>
@@ -121,10 +113,6 @@
   </div>
   <script>
     document.querySelector('.section-nav').open = !window.matchMedia('(max-width: 44rem)').matches;
-    const resources = document.getElementById('resources');
-    const hasPublicResource = resources.querySelector('.entries a[href^="https://"], .entries a[href^="http://"]') !== null;
-    resources.hidden = !hasPublicResource;
-    document.getElementById('resources-nav').hidden = !hasPublicResource;
   </script>
 </body>
 </html>
