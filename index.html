@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yongxiang Tan — Academic Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="masthead">
+    <span class="wordmark">Academic Profile</span>
+    <span class="mastnote">Working draft</span>
+  </header>
+
+  <div class="layout">
+    <aside class="profile" id="profile" aria-label="Profile">
+      <div class="portrait-placeholder draft-field" aria-label="Profile photo placeholder">Photo</div>
+      <h1 class="name">Yongxiang Tan</h1>
+      <p class="affiliation draft-field">[Current position]<br>[School or institution]</p>
+      <!-- Replace each text label with its link only when the address or PDF is available. -->
+      <div class="profile-links" aria-label="Planned profile links">
+        <span>Email</span><span>Google Scholar</span><span>GitHub</span><span>ORCID</span><span>CV (PDF)</span>
+      </div>
+      <nav aria-label="Page sections">
+        <details class="section-nav" open>
+          <summary>On this page</summary>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#interests">Research Interests</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li id="resources-nav" hidden><a href="#resources">Software &amp; Resources</a></li>
+            <li><a href="#experience">Education &amp; Experience</a></li>
+            <li><a href="#talks">Talks &amp; Presentations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </details>
+      </nav>
+    </aside>
+
+    <main id="main">
+      <section class="content-section" id="about">
+        <h2>About Me</h2>
+        <p class="draft-field">[Academic background, current research, and the questions you plan to explore next.]</p>
+      </section>
+
+      <section class="content-section" id="interests">
+        <h2>Research Interests</h2>
+        <p class="draft-field">[Two or three research areas, each with a short description.]</p>
+      </section>
+
+      <section class="content-section" id="news">
+        <h2>News</h2>
+        <p class="draft-field">[Dated updates on papers, conferences, presentations, and research milestones.]</p>
+      </section>
+
+      <section class="content-section" id="publications">
+        <h2>Publications</h2>
+        <p class="draft-field">[Paper title, authors, venue or repository, and year. Each entry is marked Published, Accepted, Submitted, or Preprint.]</p>
+      </section>
+
+      <section class="content-section" id="resources" hidden>
+        <h2>Software &amp; Resources</h2>
+        <div class="entries">
+          <!-- Add released repositories, algorithms, tools, or datasets here with public links. -->
+        </div>
+      </section>
+
+      <section class="content-section" id="experience">
+        <h2>Education &amp; Experience</h2>
+        <p class="draft-field">[Degrees, research appointments, internships, and academic visits, with institutions and dates.]</p>
+      </section>
+
+      <section class="content-section" id="talks">
+        <h2>Talks &amp; Presentations</h2>
+        <p class="draft-field">[Talk or poster title, event, date, and links to slides or video when available.]</p>
+      </section>
+
+      <section class="content-section" id="contact">
+        <h2>Contact</h2>
+        <p class="draft-field">[Preferred email address, institutional affiliation, and other academic contact details.]</p>
+      </section>
+    </main>
+  </div>
+  <script>
+    document.querySelector('.section-nav').open = !window.matchMedia('(max-width: 44rem)').matches;
+    const resources = document.getElementById('resources');
+    const hasPublicResource = resources.querySelector('.entries a[href^="https://"], .entries a[href^="http://"]') !== null;
+    resources.hidden = !hasPublicResource;
+    document.getElementById('resources-nav').hidden = !hasPublicResource;
+  </script>
+</body>
+</html>
