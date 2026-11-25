@@ -9,7 +9,7 @@
       polygon {
         transform-box: fill-box;
         transform-origin: center;
-        animation: assemble 880ms cubic-bezier(.2,.75,.2,1) var(--delay, 0ms) backwards;
+        animation: assemble 2800ms cubic-bezier(.2,.75,.2,1) var(--delay, 0ms) backwards;
       }
       .from-0 { --dx: -775px; --dy: -490px; --angle: -23deg; }
       .from-1 { --dx: 420px; --dy: -710px; --angle: 19deg; }
@@ -19,15 +19,14 @@
       .from-5 { --dx: -780px; --dy: 210px; --angle: 17deg; }
       .from-6 { --dx: -170px; --dy: -660px; --angle: -28deg; }
       .from-7 { --dx: 220px; --dy: 650px; --angle: -16deg; }
-      .wave-1 { --delay: 52ms; }
-      .wave-2 { --delay: 104ms; }
-      .wave-3 { --delay: 156ms; }
-      .wave-4 { --delay: 208ms; }
-      .wave-5 { --delay: 260ms; }
-      .wave-6 { --delay: 312ms; }
-      .wave-7 { --delay: 364ms; }
-      .wave-8 { --delay: 416ms; }
-      .wave-9 { --delay: 468ms; }
+      .wave-1 { --delay: 150ms; }
+      .wave-2 { --delay: 300ms; }
+      .wave-3 { --delay: 450ms; }
+      .wave-4 { --delay: 600ms; }
+      .wave-5 { --delay: 750ms; }
+      .wave-6 { --delay: 900ms; }
+      .wave-7 { --delay: 1050ms; }
+      .wave-8 { --delay: 1200ms; }
       @keyframes assemble {
         from { opacity: 0; transform: translate(var(--dx), var(--dy)) rotate(var(--angle)) scale(.72); }
         24% { opacity: 1; }
