@@ -47,7 +47,6 @@ a:hover { text-decoration-thickness: .12em; }
   border-bottom: 1px solid var(--rule);
 }
 .wordmark { font: 500 1.35rem/1.35 var(--serif); color: var(--wine); }
-.mastnote { color: var(--muted); font: italic 1rem/1.4 var(--serif); }
 .layout {
   display: grid;
   grid-template-columns: minmax(12rem, .9fr) minmax(0, 2.45fr);
